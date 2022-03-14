@@ -10,6 +10,8 @@
 
 <body>
     <h1>Hello {{ $name }}!</h1>
+
+    <a href="{{ route('languages') }}">Linguaggi</a>
 </body>
 
 </html>

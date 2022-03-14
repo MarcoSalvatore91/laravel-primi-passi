@@ -14,5 +14,22 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
-});
+
+    $name = "Marco";
+
+    return view('home', compact('name'));
+})->name('home');
+
+Route::get('/languages', function () {
+
+    $data = [
+        'languages' => [
+            'HTML',
+            'CSS',
+            'JavaScript',
+            'PHP'
+        ]
+    ];
+
+    return view('blog.languages', $data);
+})->name('languages');
