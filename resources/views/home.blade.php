@@ -12,6 +12,7 @@
     <h1>Hello {{ $name }}!</h1>
 
     <a href="{{ route('languages') }}">Linguaggi</a>
+    <a href="{{ route('frameworks') }}">Framework</a>
 </body>
 
 </html>

@@ -33,3 +33,16 @@ Route::get('/languages', function () {
 
     return view('blog.languages', $data);
 })->name('languages');
+
+Route::get('/frameworks', function () {
+
+    $data = [
+        'frameworks' => [
+            'Bootstrap',
+            'Vue Cli',
+            'Laravel'
+        ]
+    ];
+
+    return view('blog.frameworks', $data);
+})->name('frameworks');
